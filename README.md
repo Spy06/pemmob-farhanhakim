@@ -8,4 +8,4 @@ Shift Akhir: B
 <img alt="Tugas Pertemuan 2" src="Displays/Display22.png" />
 
 ## DISPLAY PERTEMUAN 3
-<video alt="Tugas Pertemuan 3" src="Displays/Display3.webm">
+<video alt="Tugas Pertemuan 3" src="Displays/Display3.webm" controls></video>
