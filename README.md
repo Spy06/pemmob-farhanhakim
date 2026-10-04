@@ -8,6 +8,10 @@ Shift Akhir: B
 <img alt="Tugas Pertemuan 2" src="Displays/Display22.png" />
 
 ## DISPLAY PERTEMUAN 3
-
-
 https://github.com/user-attachments/assets/e71f3ad3-b6ab-4f66-8cf3-c90a86c697d7
+
+## DISPLAY PERTEMUAN 4
+
+
+https://github.com/user-attachments/assets/e9b83c70-e749-4814-8055-112846a1ec88
+
