@@ -13,7 +13,8 @@ import com.pemmob.farhanhakim.ui.screen.DaftarProdukScreen
 import com.pemmob.farhanhakim.ui.screen.DetailProductScreen
 import com.pemmob.farhanhakim.ui.screen.HubungiKamiScreen
 import com.pemmob.farhanhakim.ui.theme.JualanTheme
-
+import com.pemmob.farhanhakim.viewmodel.ProductViewModel
+import androidx.lifecycle.viewmodel.compose.viewModel
 class HomeActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,9 +22,10 @@ class HomeActivity : ComponentActivity() {
         setContent {
             JualanTheme {
                 val navController = rememberNavController()
+                val productViewModel: ProductViewModel = viewModel()
                 NavHost(navController = navController, startDestination = "daftar_produk") {
                     composable(route = "daftar_produk") {
-                        DaftarProdukScreen(navController = navController)
+                        DaftarProdukScreen(navController = navController, viewModel = productViewModel)
                     }
                     composable(
                         route = "detail/{productId}",
@@ -34,7 +36,8 @@ class HomeActivity : ComponentActivity() {
                         val productId = backStackEntry.arguments?.getInt("productId") ?: 0
                         DetailProductScreen(
                             productId = productId,
-                            navController = navController
+                            navController = navController,
+                            viewModel = productViewModel
                         )
                     }
                     composable(route = "hubungi_kami") {
